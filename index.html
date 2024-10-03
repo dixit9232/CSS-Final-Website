@@ -11,6 +11,7 @@
     />
     <meta name="keywords" content="css, html, scss, css course, html course" />
     <meta name="robots" content="index, follow" />
+   
     <title>Thapa Eduhub</title>
 
     <link
@@ -21,6 +22,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css" />
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -77,11 +79,13 @@
           </div>
           <div class="main-section--image">
             <figure>
-              <img
-                src="images/main-hero.webp"
-                alt="a guy with laptop and doing coding"
-                width="80%"
-              />
+              <div data-aos="zoom-out-down">
+                <img
+                  src="images/main-hero.webp"
+                  alt="a guy with laptop and doing coding"
+                  width="80%"
+                />
+              </div>
             </figure>
           </div>
         </div>
@@ -125,7 +129,11 @@
       </div>
 
       <div class="container grid grid-three-cols">
-        <div class="common-container">
+        <div
+          class="common-container"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <div class="common-icon">
             <img src="images/research.png" alt="research image" height="70%" />
           </div>
@@ -137,7 +145,11 @@
           </p>
         </div>
 
-        <div class="common-container">
+        <div
+          class="common-container"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="common-icon">
             <img src="images/design.png" alt="design image" height="70%" />
           </div>
@@ -148,7 +160,11 @@
           </p>
         </div>
 
-        <div class="common-container">
+        <div
+          class="common-container"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
           <div class="common-icon">
             <img src="images/Coding.png" alt="coding image" height="70%" />
           </div>
@@ -174,7 +190,7 @@
       </div>
 
       <div class="container grid grid-four-cols">
-        <div class="course-div">
+        <div class="course-div" data-aos="zoom-out-up" data-aos-duration="1000">
           <div class="common-icon">
             <i class="icon fa-brands fa-js" style="color: #ffd43b"></i>
           </div>
@@ -184,7 +200,7 @@
           </p>
         </div>
 
-        <div class="course-div">
+        <div class="course-div" data-aos="zoom-out-up" data-aos-duration="1000">
           <div class="common-icon">
             <i class="icon fa-brands fa-python" style="color: #74c0fc"></i>
           </div>
@@ -194,7 +210,7 @@
           </p>
         </div>
 
-        <div class="course-div">
+        <div class="course-div" data-aos="zoom-out-up" data-aos-duration="1000">
           <div class="common-icon">
             <i class="icon fa-solid fa-code" style="color: #b197fc"></i>
           </div>
@@ -204,7 +220,7 @@
           </p>
         </div>
 
-        <div class="course-div">
+        <div class="course-div" data-aos="zoom-out-up" data-aos-duration="1000">
           <div class="common-icon">
             <i class="icon fa-brands fa-java" style="color: #3d7491"></i>
           </div>
@@ -214,7 +230,7 @@
           </p>
         </div>
 
-        <div class="course-div">
+        <div class="course-div" data-aos="zoom-out-up" data-aos-duration="1000">
           <div class="common-icon">
             <i class="icon fa-solid fa-database" style="color: #74c0fc"></i>
           </div>
@@ -223,7 +239,7 @@
             Effective data management and retrieval using SQL database language.
           </p>
         </div>
-        <div class="course-div">
+        <div class="course-div" data-aos="zoom-out-up" data-aos-duration="1000">
           <div class="common-icon">
             <i class="fa-brands fa-html5" style="color: #ff5226"></i>
           </div>
@@ -232,7 +248,7 @@
             Web content structure with essential markup language.
           </p>
         </div>
-        <div class="course-div">
+        <div class="course-div" data-aos="zoom-out-up" data-aos-duration="1000">
           <div class="common-icon">
             <i class="fa-brands fa-css3" style="color: #009dff"></i>
           </div>
@@ -258,7 +274,7 @@
 
       <div class="container grid grid-three-cols">
         <div class="why-us-div-left text-align--right">
-          <div class="why-us-common-div">
+          <div class="why-us-common-div" data-aos="fade-right">
             <p class="common-number">1</p>
             <h3 class="common-heading">Expert Instructors</h3>
             <p class="common-paragraph">
@@ -266,7 +282,7 @@
               knowledge and guiding you toward success in your learning journey.
             </p>
           </div>
-          <div class="why-us-common-div">
+          <div class="why-us-common-div" data-aos="fade-right">
             <p class="common-number">2</p>
             <h3 class="common-heading">Interactive Lessons</h3>
             <p class="common-paragraph">
@@ -276,7 +292,7 @@
             </p>
           </div>
 
-          <div class="why-us-common-div">
+          <div class="why-us-common-div" data-aos="fade-right">
             <p class="common-number">3</p>
             <h3 class="common-heading">Lifelong Learning Support</h3>
             <p class="common-paragraph">
@@ -287,12 +303,12 @@
           </div>
         </div>
 
-        <div class="container-image">
+        <div class="container-image" data-aos="zoom-in">
           <img src="images/mobile.png" alt="mobile website" />
         </div>
 
         <div class="why-us-div-right text-align--left">
-          <div class="why-us-common-div">
+          <div class="why-us-common-div" data-aos="fade-left">
             <p class="common-number">4</p>
             <h3 class="common-heading">Expert Instructors</h3>
             <p class="common-paragraph">
@@ -301,7 +317,7 @@
             </p>
           </div>
 
-          <div class="why-us-common-div">
+          <div class="why-us-common-div" data-aos="fade-left">
             <p class="common-number">5</p>
             <h3 class="common-heading">Lifelong Learning Support</h3>
             <p class="common-paragraph">
@@ -311,7 +327,7 @@
             </p>
           </div>
 
-          <div class="why-us-common-div">
+          <div class="why-us-common-div" data-aos="fade-left">
             <p class="common-number">6</p>
             <h3 class="common-heading">Lifelong Learning Support</h3>
             <p class="common-paragraph">
@@ -401,4 +417,9 @@
 
     <!-- ========== End Footer Section ========== -->
   </body>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

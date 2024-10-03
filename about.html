@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>About page</title>
     <link
       rel="stylesheet"
@@ -63,7 +65,11 @@
       </div>
 
       <div class="container grid grid-three-cols">
-        <div class="common-container">
+        <div
+          class="common-container"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <div class="common-icon">
             <img src="images/research.png" alt="research image" height="70%" />
           </div>
@@ -75,7 +81,11 @@
           </p>
         </div>
 
-        <div class="common-container">
+        <div
+          class="common-container"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="common-icon">
             <img src="images/design.png" alt="design image" height="70%" />
           </div>
@@ -86,7 +96,11 @@
           </p>
         </div>
 
-        <div class="common-container">
+        <div
+          class="common-container"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
           <div class="common-icon">
             <img src="images/Coding.png" alt="coding image" height="70%" />
           </div>
@@ -183,4 +197,9 @@
 
     <!-- ========== End Footer Section ========== -->
   </body>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

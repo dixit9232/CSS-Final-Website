@@ -462,7 +462,7 @@ main {
 
       &::before {
         content: "";
-        width: 40rem;
+        width: 45rem;
         display: block;
         aspect-ratio: 1;
         background-color: var(--primary-color);
@@ -482,7 +482,7 @@ main {
 
       &::after {
         content: "";
-        width: 45rem;
+        width: 47rem;
         display: block;
         aspect-ratio: 1;
         position: absolute;
