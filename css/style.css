@@ -42,12 +42,15 @@ li {
   list-style: none;
 }
 
-:is(.about-section,
-  .courses-section,
-  .section-why-us,
-  .contact-section-homepage,
-  .blog-section,
-  .contact-section) .container:first-child {
+:is(
+    .about-section,
+    .courses-section,
+    .section-why-us,
+    .contact-section-homepage,
+    .blog-section,
+    .contact-section
+  )
+  .container:first-child {
   padding: 6.4rem 2.4rem 2.4rem 2.4rem;
 }
 
@@ -157,12 +160,14 @@ li {
 /***** Home Page Section *****/
 
 main {
-  background: linear-gradient(to top right,
-      #3d86fa,
-      #4484fb,
-      #679eff,
-      #b3d2ff,
-      #ebf3fe);
+  background: linear-gradient(
+    to top right,
+    #3d86fa,
+    #4484fb,
+    #679eff,
+    #b3d2ff,
+    #ebf3fe
+  );
   position: relative;
   height: auto;
 
@@ -308,7 +313,7 @@ main {
     }
   }
 
-  & .common-icon:hover>img {
+  & .common-icon:hover > img {
     background: linear-gradient(to right, #0575e6, #021b79);
     box-shadow: 0 0 5rem 0.001rem #003b9993;
     scale: 1.2;
@@ -521,7 +526,6 @@ main {
 /***** End Why-us Section *****/
 
 /***** Contact Home Section *****/
-/***** End Contact Home Section *****/
 
 .contact-section-homepage {
   position: relative;
@@ -539,9 +543,9 @@ main {
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
 
-  & .container {
+  & .container:first-child {
     margin: 0 auto;
-    padding: 0;
+    padding: 6.4rem 0;
   }
 
   & .grid {
@@ -564,6 +568,7 @@ main {
     margin: 1.2rem 0 3.6rem 0;
   }
 }
+/***** End Contact Home Section *****/
 
 /***** Blog Section *****/
 .blog-section {
@@ -726,7 +731,6 @@ main {
 
 /***** End Footer Section *****/
 
-
 /***** Responsiveness Section *****/
 
 @media (width<=1400px) {
@@ -743,18 +747,15 @@ main {
 
         &::after {
           width: 0;
-
         }
 
         &::before {
           width: 0;
-
         }
       }
 
       & .why-us-div-left {
         order: 2;
-
       }
 
       & .why-us-div-right {
@@ -762,10 +763,17 @@ main {
       }
     }
   }
+  .contact-section-homepage {
+    min-height: 25rem;
+  }
 
+  .contact-section-homepage .container:first-child {
+    padding: 3.4rem;
+    & .section-common-heading {
+      font-size: 2.2rem;
+    }
+  }
 }
-
-
 
 @media (width<=1200px) {
   main {
@@ -787,7 +795,6 @@ main {
         width: 50%;
         height: auto;
       }
-
     }
   }
 }
@@ -804,7 +811,6 @@ main {
   }
 
   .section-why-us {
-
     & .grid {
       display: flex;
       flex-direction: column;
@@ -830,42 +836,123 @@ main {
 
           &::before {
             width: 0;
-
           }
-
         }
-
-
 
         & .why-us-div-left {
           order: 2;
-
-
-
-
         }
 
         & .why-us-div-right {
           order: 3;
-
         }
       }
     }
-
   }
 
   .section-why-us {
     & .grid {
+      place-items: center;
+      margin: 0;
       & .container-image {
         & img {
           width: 50%;
           height: auto;
         }
       }
-
     }
   }
 
+  footer .container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  footer .footer-content {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .footer-section {
+    & .courses-links,
+    .links,
+    .blogs {
+      place-items: start;
+    }
+  }
+}
+
+@media (width <= 768px) {
+  .grid-two-cols,
+  .grid-three-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .header-section .container {
+    display: flex;
+    flex-direction: column;
+
+    & .navbar ul {
+      gap: 2.4rem;
+      & li {
+        font-size: 1.5rem;
+      }
+    }
+
+    & .brand-section {
+      text-align: center;
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  .contact-section {
+    & .grid-two-cols .mb-3:first-child {
+      flex-direction: column;
+    }
+
+    & .grid {
+      gap: 6.4rem;
+    }
+  }
+
+  .contact-section-homepage {
+    & .container:first-child {
+      margin: 0;
+      padding: 3.4rem 0;
+    }
+    .btn {
+      font-size: 1.2rem;
+    }
+  }
 }
 
 /***** End Responsiveness Section *****/
+
+/***** Slider Section *****/
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0px;
+}
+
+/* ::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--supporting-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--heading-color);
+} */
+
+
+
+/***** End Slider Section *****/
